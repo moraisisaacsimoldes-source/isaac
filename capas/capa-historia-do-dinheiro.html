@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;overflow:hidden}
+  body{font-family:"Inter Display","Inter",sans-serif;color:#fff;
+    background:radial-gradient(ellipse 90% 60% at 50% 45%,#16402f 0%,#0b2219 55%,#05110c 100%);position:relative}
+  .coin{position:absolute;border-radius:50%;
+    background:radial-gradient(circle at 35% 30%,#fff3b0 0%,#f5c542 28%,#d9a21b 60%,#8a5a00 100%);
+    box-shadow:0 18px 40px rgba(0,0,0,.55), inset 0 0 0 10px rgba(138,90,0,.35), inset 0 0 0 22px rgba(255,236,150,.25);
+    display:flex;align-items:center;justify-content:center;font-weight:900;color:rgba(110,70,0,.55)}
+  .glow{position:absolute;left:50%;top:47%;width:900px;height:900px;transform:translate(-50%,-50%);
+    background:radial-gradient(circle,rgba(245,197,66,.22) 0%,rgba(245,197,66,0) 65%)}
+  .content{position:absolute;left:0;right:0;top:330px;bottom:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  .tag{font-size:40px;font-weight:700;letter-spacing:10px;color:#f5c542;text-transform:uppercase;margin-bottom:34px}
+  h1{font-size:210px;line-height:.92;font-weight:900;letter-spacing:-6px;text-transform:uppercase;text-shadow:0 10px 40px rgba(0,0,0,.6)}
+  h1 .gold{color:#ffc928;text-shadow:0 6px 0 #a86d00,0 14px 40px rgba(0,0,0,.6)}
+  .sub{margin-top:46px;font-size:56px;font-weight:600;line-height:1.2;color:#e9f3ee}
+  .sub b{color:#f5c542}
+  .timeline{margin-top:70px;display:flex;flex-wrap:wrap;justify-content:center;gap:16px;max-width:960px}
+  .chip{font-size:34px;font-weight:700;padding:14px 28px;border-radius:999px;background:rgba(255,255,255,.08);border:2px solid rgba(245,197,66,.55);color:#fff}
+  .arrow{font-size:34px;color:#f5c542;align-self:center;font-weight:900}
+  .handle{position:absolute;left:0;right:0;bottom:330px;text-align:center;font-size:44px;font-weight:800;letter-spacing:2px;color:#fff;opacity:.9}
+</style></head><body>
+  <div class="glow"></div>
+  <div class="coin" style="width:300px;height:300px;left:-80px;top:120px;font-size:120px;transform:rotate(-15deg)">$</div>
+  <div class="coin" style="width:190px;height:190px;right:60px;top:180px;font-size:80px;transform:rotate(12deg)">R$</div>
+  <div class="coin" style="width:130px;height:130px;right:260px;top:70px;font-size:56px">¢</div>
+  <div class="coin" style="width:260px;height:260px;right:-70px;bottom:120px;font-size:110px;transform:rotate(18deg)">₿</div>
+  <div class="coin" style="width:170px;height:170px;left:70px;bottom:150px;font-size:72px;transform:rotate(-8deg)">€</div>
+  <div class="coin" style="width:110px;height:110px;left:300px;bottom:60px;font-size:46px">$</div>
+
+  <div class="content">
+    <div class="tag">A história do dinheiro</div>
+    <h1>Do sal<br><span class="gold">ao Pix</span></h1>
+    <p class="sub">5 mil anos em <b>40 segundos</b></p>
+    <div class="timeline">
+      <span class="chip">Sal</span><span class="arrow">›</span>
+      <span class="chip">Moedas</span><span class="arrow">›</span>
+      <span class="chip">Papel</span><span class="arrow">›</span>
+      <span class="chip">Cartão</span><span class="arrow">›</span>
+      <span class="chip">Bitcoin</span><span class="arrow">›</span>
+      <span class="chip">Pix</span>
+    </div>
+  </div>
+  <div class="handle">@factuva</div>
+</body></html>
