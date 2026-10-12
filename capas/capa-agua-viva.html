@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1080px;height:1920px;overflow:hidden}
+  body{font-family:"Inter Display","Inter",sans-serif;color:#fff;position:relative;
+    background:linear-gradient(180deg,#0a4a6e 0%,#062c4a 35%,#03172b 70%,#010a14 100%)}
+  .rays{position:absolute;inset:0;background:repeating-linear-gradient(100deg,rgba(255,255,255,.05) 0 40px,rgba(255,255,255,0) 40px 120px);
+    -webkit-mask:linear-gradient(180deg,#000 0%,transparent 45%);mask:linear-gradient(180deg,#000 0%,transparent 45%)}
+  .bubbles i{position:absolute;border-radius:50%;border:2px solid rgba(180,240,255,.8)}
+  .jelly{position:absolute;filter:drop-shadow(0 0 30px rgba(255,140,230,.7))}
+  .glow{position:absolute;left:50%;top:50%;width:950px;height:950px;transform:translate(-50%,-50%);
+    background:radial-gradient(circle,rgba(80,220,255,.18) 0%,rgba(80,220,255,0) 65%)}
+  .content{position:absolute;left:0;right:0;top:330px;bottom:300px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+  .tag{font-size:40px;font-weight:700;letter-spacing:10px;color:#7ff0ff;text-transform:uppercase;margin-bottom:34px}
+  h1{font-size:158px;line-height:1.02;font-weight:900;letter-spacing:-4px;text-transform:uppercase;text-shadow:0 10px 40px rgba(0,0,0,.6)}
+  h1 .hl{color:#ff8ce6;text-shadow:0 6px 0 #a3247f,0 0 50px rgba(255,140,230,.6)}
+  .sub{margin-top:46px;font-size:52px;font-weight:600;line-height:1.25;color:#e3f6ff}
+  .sub b{color:#7ff0ff}
+  .chips{margin-top:64px;display:flex;flex-wrap:wrap;justify-content:center;gap:18px;max-width:960px}
+  .chip{font-size:34px;font-weight:700;padding:14px 28px;border-radius:999px;background:rgba(255,255,255,.08);border:2px solid rgba(127,240,255,.55)}
+  .handle{position:absolute;left:0;right:0;bottom:330px;text-align:center;font-size:44px;font-weight:800;letter-spacing:2px;opacity:.9}
+</style></head><body>
+  <div class="rays"></div>
+  <div class="bubbles"><i style="left:1013px;top:444px;width:8px;height:8px;opacity:0.25"></i><i style="left:893px;top:1595px;width:18px;height:18px;opacity:0.40"></i><i style="left:616px;top:862px;width:18px;height:18px;opacity:0.35"></i><i style="left:790px;top:1175px;width:8px;height:8px;opacity:0.29"></i><i style="left:834px;top:1196px;width:10px;height:10px;opacity:0.24"></i><i style="left:689px;top:1396px;width:18px;height:18px;opacity:0.52"></i><i style="left:58px;top:1753px;width:14px;height:14px;opacity:0.26"></i><i style="left:334px;top:1430px;width:24px;height:24px;opacity:0.49"></i><i style="left:213px;top:1461px;width:18px;height:18px;opacity:0.41"></i><i style="left:546px;top:583px;width:6px;height:6px;opacity:0.20"></i><i style="left:987px;top:1748px;width:18px;height:18px;opacity:0.41"></i><i style="left:990px;top:181px;width:6px;height:6px;opacity:0.29"></i><i style="left:136px;top:840px;width:14px;height:14px;opacity:0.51"></i><i style="left:41px;top:601px;width:10px;height:10px;opacity:0.32"></i><i style="left:850px;top:1787px;width:18px;height:18px;opacity:0.20"></i><i style="left:92px;top:773px;width:8px;height:8px;opacity:0.44"></i><i style="left:677px;top:1128px;width:8px;height:8px;opacity:0.50"></i><i style="left:571px;top:1035px;width:24px;height:24px;opacity:0.24"></i><i style="left:73px;top:634px;width:14px;height:14px;opacity:0.15"></i><i style="left:221px;top:1228px;width:18px;height:18px;opacity:0.36"></i><i style="left:404px;top:835px;width:18px;height:18px;opacity:0.27"></i><i style="left:539px;top:319px;width:14px;height:14px;opacity:0.43"></i><i style="left:695px;top:642px;width:14px;height:14px;opacity:0.29"></i><i style="left:283px;top:1836px;width:24px;height:24px;opacity:0.49"></i><i style="left:771px;top:942px;width:8px;height:8px;opacity:0.50"></i><i style="left:790px;top:1318px;width:8px;height:8px;opacity:0.50"></i><i style="left:210px;top:1270px;width:24px;height:24px;opacity:0.54"></i><i style="left:1038px;top:555px;width:8px;height:8px;opacity:0.32"></i><i style="left:486px;top:616px;width:18px;height:18px;opacity:0.32"></i><i style="left:528px;top:1067px;width:14px;height:14px;opacity:0.27"></i><i style="left:694px;top:23px;width:24px;height:24px;opacity:0.47"></i><i style="left:644px;top:41px;width:6px;height:6px;opacity:0.30"></i><i style="left:272px;top:123px;width:24px;height:24px;opacity:0.40"></i><i style="left:680px;top:954px;width:6px;height:6px;opacity:0.29"></i><i style="left:722px;top:1246px;width:8px;height:8px;opacity:0.43"></i><i style="left:1002px;top:45px;width:18px;height:18px;opacity:0.39"></i><i style="left:43px;top:756px;width:6px;height:6px;opacity:0.25"></i><i style="left:934px;top:611px;width:10px;height:10px;opacity:0.39"></i><i style="left:655px;top:363px;width:6px;height:6px;opacity:0.30"></i><i style="left:640px;top:1552px;width:10px;height:10px;opacity:0.30"></i><i style="left:540px;top:615px;width:14px;height:14px;opacity:0.46"></i><i style="left:214px;top:1581px;width:18px;height:18px;opacity:0.48"></i><i style="left:269px;top:634px;width:24px;height:24px;opacity:0.35"></i><i style="left:551px;top:488px;width:14px;height:14px;opacity:0.28"></i><i style="left:891px;top:1330px;width:24px;height:24px;opacity:0.43"></i><i style="left:208px;top:1230px;width:14px;height:14px;opacity:0.28"></i><i style="left:683px;top:1382px;width:14px;height:14px;opacity:0.48"></i><i style="left:897px;top:1658px;width:24px;height:24px;opacity:0.49"></i><i style="left:346px;top:163px;width:18px;height:18px;opacity:0.28"></i><i style="left:446px;top:1812px;width:14px;height:14px;opacity:0.38"></i><i style="left:554px;top:460px;width:8px;height:8px;opacity:0.46"></i><i style="left:69px;top:1084px;width:10px;height:10px;opacity:0.53"></i><i style="left:645px;top:1652px;width:6px;height:6px;opacity:0.48"></i><i style="left:375px;top:1768px;width:6px;height:6px;opacity:0.26"></i><i style="left:175px;top:1651px;width:8px;height:8px;opacity:0.40"></i></div>
+  <div class="glow"></div>
+  <svg class="jelly" style="left:620px;top:90px;width:378.0px;opacity:1" viewBox="0 0 280 300">
+<defs><radialGradient id="b315" cx="50%" cy="35%" r="65%"><stop offset="0" stop-color="hsl(315,100%,92%)"/><stop offset=".5" stop-color="hsl(315,95%,70%)" stop-opacity=".85"/><stop offset="1" stop-color="hsl(315,90%,55%)" stop-opacity=".25"/></radialGradient>
+<linearGradient id="t315" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="hsl(315,100%,80%)"/><stop offset="1" stop-color="hsl(315,100%,70%)" stop-opacity="0"/></linearGradient></defs>
+<path d="M40 95 C 40 20, 240 20, 240 95 C 210 108, 180 88, 140 100 C 100 88, 70 108, 40 95 Z" fill="url(#b315)"/>
+<ellipse cx="140" cy="62" rx="44" ry="22" fill="hsl(315,100%,85%)" opacity=".55"/>
+<path d="M60 92 C 68 150, 52 200, 60 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M80 92 C 52 150, 108 200, 80 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M100 92 C 108 150, 92 200, 100 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M120 92 C 92 150, 148 200, 120 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M140 92 C 148 150, 132 200, 140 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M160 92 C 132 150, 188 200, 160 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+  <svg class="jelly" style="left:90px;top:210px;width:224.0px;opacity:0.85" viewBox="0 0 280 300">
+<defs><radialGradient id="b195" cx="50%" cy="35%" r="65%"><stop offset="0" stop-color="hsl(195,100%,92%)"/><stop offset=".5" stop-color="hsl(195,95%,70%)" stop-opacity=".85"/><stop offset="1" stop-color="hsl(195,90%,55%)" stop-opacity=".25"/></radialGradient>
+<linearGradient id="t195" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="hsl(195,100%,80%)"/><stop offset="1" stop-color="hsl(195,100%,70%)" stop-opacity="0"/></linearGradient></defs>
+<path d="M40 95 C 40 20, 240 20, 240 95 C 210 108, 180 88, 140 100 C 100 88, 70 108, 40 95 Z" fill="url(#b195)"/>
+<ellipse cx="140" cy="62" rx="44" ry="22" fill="hsl(195,100%,85%)" opacity=".55"/>
+<path d="M60 92 C 68 150, 52 200, 60 270" stroke="url(#t195)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M80 92 C 52 150, 108 200, 80 270" stroke="url(#t195)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M100 92 C 108 150, 92 200, 100 270" stroke="url(#t195)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M120 92 C 92 150, 148 200, 120 270" stroke="url(#t195)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M140 92 C 148 150, 132 200, 140 270" stroke="url(#t195)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M160 92 C 132 150, 188 200, 160 270" stroke="url(#t195)" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+  <svg class="jelly" style="left:800px;top:1560px;width:252.0px;opacity:0.7" viewBox="0 0 280 300">
+<defs><radialGradient id="b280" cx="50%" cy="35%" r="65%"><stop offset="0" stop-color="hsl(280,100%,92%)"/><stop offset=".5" stop-color="hsl(280,95%,70%)" stop-opacity=".85"/><stop offset="1" stop-color="hsl(280,90%,55%)" stop-opacity=".25"/></radialGradient>
+<linearGradient id="t280" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="hsl(280,100%,80%)"/><stop offset="1" stop-color="hsl(280,100%,70%)" stop-opacity="0"/></linearGradient></defs>
+<path d="M40 95 C 40 20, 240 20, 240 95 C 210 108, 180 88, 140 100 C 100 88, 70 108, 40 95 Z" fill="url(#b280)"/>
+<ellipse cx="140" cy="62" rx="44" ry="22" fill="hsl(280,100%,85%)" opacity=".55"/>
+<path d="M60 92 C 68 150, 52 200, 60 270" stroke="url(#t280)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M80 92 C 52 150, 108 200, 80 270" stroke="url(#t280)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M100 92 C 108 150, 92 200, 100 270" stroke="url(#t280)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M120 92 C 92 150, 148 200, 120 270" stroke="url(#t280)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M140 92 C 148 150, 132 200, 140 270" stroke="url(#t280)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M160 92 C 132 150, 188 200, 160 270" stroke="url(#t280)" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+  <svg class="jelly" style="left:-30px;top:1500px;width:196.0px;opacity:0.55" viewBox="0 0 280 300">
+<defs><radialGradient id="b315" cx="50%" cy="35%" r="65%"><stop offset="0" stop-color="hsl(315,100%,92%)"/><stop offset=".5" stop-color="hsl(315,95%,70%)" stop-opacity=".85"/><stop offset="1" stop-color="hsl(315,90%,55%)" stop-opacity=".25"/></radialGradient>
+<linearGradient id="t315" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="hsl(315,100%,80%)"/><stop offset="1" stop-color="hsl(315,100%,70%)" stop-opacity="0"/></linearGradient></defs>
+<path d="M40 95 C 40 20, 240 20, 240 95 C 210 108, 180 88, 140 100 C 100 88, 70 108, 40 95 Z" fill="url(#b315)"/>
+<ellipse cx="140" cy="62" rx="44" ry="22" fill="hsl(315,100%,85%)" opacity=".55"/>
+<path d="M60 92 C 68 150, 52 200, 60 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M80 92 C 52 150, 108 200, 80 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M100 92 C 108 150, 92 200, 100 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M120 92 C 92 150, 148 200, 120 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M140 92 C 148 150, 132 200, 140 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M160 92 C 132 150, 188 200, 160 270" stroke="url(#t315)" stroke-width="5" fill="none" stroke-linecap="round"/></svg>
+  <div class="content">
+    <div class="tag">A água-viva que</div>
+    <h1>Nunca morre<br><span class="hl">de velhice</span></h1>
+    <p class="sub">Quando envelhece, ela <b>volta a ser bebê</b></p>
+    <div class="chips">
+      <span class="chip">🪼 Menor que uma unha</span>
+      <span class="chip">🔄 Renasce</span>
+      <span class="chip">♾️ Repete várias vezes</span>
+    </div>
+  </div>
+  <div class="handle">@factuva</div>
+</body></html>
