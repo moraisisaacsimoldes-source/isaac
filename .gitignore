@@ -1,0 +1,5 @@
+# Contém suas chaves de API: nunca envie para o GitHub
+config.toml
+storage/
+saida/
+__pycache__/

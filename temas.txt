@@ -1,0 +1,7 @@
+# Um tema por linha. Linhas começando com # são ignoradas.
+# O roteiro, a narração, as imagens e as legendas são gerados automaticamente.
+5 curiosidades sobre o oceano que quase ninguém conhece
+Por que o céu é azul? Explicação simples
+3 hábitos de pessoas muito produtivas
+A história do café: da Etiópia ao Brasil
+Como os juros compostos fazem seu dinheiro crescer
