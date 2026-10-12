@@ -12,8 +12,8 @@ para os dois).
 | Item | Custo | Onde conseguir |
 | --- | --- | --- |
 | [Docker Desktop](https://www.docker.com/products/docker-desktop/) | grátis | instale no seu PC (Windows, Mac ou Linux) |
-| Chave do **Pexels** (imagens/vídeos de banco) | grátis | https://www.pexels.com/api/ |
-| Chave de um **LLM** (escreve o roteiro) | centavos por vídeo | ex.: [DeepSeek](https://platform.deepseek.com/api_keys), [Gemini](https://aistudio.google.com/app/apikey) (tem plano grátis), [OpenAI](https://platform.openai.com/api-keys) |
+| Chave do **Pixabay** (imagens/vídeos de banco) | grátis | https://pixabay.com/api/docs/ (o Pexels suspendeu chaves novas) |
+| Chave de um **LLM** (escreve o roteiro) | grátis ou centavos | recomendado: [Groq](https://console.groq.com/keys) (grátis, sem cartão). Outros: [DeepSeek](https://platform.deepseek.com/api_keys), [Gemini](https://aistudio.google.com/app/apikey), [OpenAI](https://platform.openai.com/api-keys) |
 | Narração | grátis | Edge TTS, já vem incluso, sem chave |
 
 ## Passo a passo
@@ -36,15 +36,15 @@ curl -o config.toml https://raw.githubusercontent.com/harry0703/MoneyPrinterTurb
 Abra `config.toml` num editor de texto e preencha:
 
 ```toml
-pexels_api_keys = ["SUA_CHAVE_PEXELS"]
+pixabay_api_keys = ["SUA_CHAVE_PIXABAY"]
 
 # Escolha UM provedor de LLM e preencha a chave dele. Exemplos:
-llm_provider = "deepseek"
-deepseek_api_key = "SUA_CHAVE_DEEPSEEK"
+llm_provider = "groq"
+groq_api_key = "SUA_CHAVE_GROQ"
 
 # ou
-# llm_provider = "gemini"
-# gemini_api_key = "SUA_CHAVE_GEMINI"
+# llm_provider = "deepseek"
+# deepseek_api_key = "SUA_CHAVE_DEEPSEEK"
 ```
 
 > ⚠️ O `config.toml` tem suas chaves secretas. Ele já está no `.gitignore`;
@@ -115,5 +115,6 @@ TikTok (configuração na interface web), mas recomendo revisar cada vídeo ante
 | --- | --- |
 | `Não consegui falar com a API` | rode `docker compose up -d` e espere ~30s |
 | falhou na etapa `script` | chave do LLM errada ou sem crédito em `config.toml` |
-| falhou na etapa `material`/`video` | chave do Pexels faltando ou tema muito específico (tente outro) |
+| falhou na etapa `material`/`video` | chave do Pixabay faltando ou tema muito específico (tente outro) |
+| Gemini: "Failed to create project" | crie um projeto em https://console.cloud.google.com/projectcreate e escolha-o ao criar a chave, ou use o Groq |
 | mudou o `config.toml` e nada mudou | `docker compose restart` |

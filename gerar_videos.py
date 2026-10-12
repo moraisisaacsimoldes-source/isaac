@@ -59,7 +59,7 @@ def parametros(tema, args):
         "video_subject": tema,
         "video_language": "pt-BR",
         "video_aspect": "9:16",  # vertical: Shorts e Reels
-        "video_source": "pexels",
+        "video_source": args.fonte,
         "video_concat_mode": "random",
         "video_clip_duration": 3,  # cortes rápidos prendem mais a atenção
         "video_count": 1,
@@ -114,6 +114,8 @@ def main():
     p.add_argument("temas", nargs="?", default="temas.txt", help="arquivo com um tema por linha")
     p.add_argument("--voz", default="pt-BR-FranciscaNeural-Female",
                    help="voz do Edge TTS (grátis). Ex.: pt-BR-AntonioNeural-Male, pt-BR-ThalitaMultilingualNeural-Female")
+    p.add_argument("--fonte", default="pixabay", choices=["pixabay", "pexels"],
+                   help="banco de imagens/vídeos (precisa da chave dele no config.toml)")
     p.add_argument("--paragrafos", type=int, default=1, help="tamanho do roteiro (1 = ~30-45s, ideal para Shorts/Reels)")
     p.add_argument("--saida", default="saida", help="pasta onde salvar os vídeos")
     p.add_argument("--timeout", type=int, default=1200, help="tempo máximo por vídeo, em segundos")
