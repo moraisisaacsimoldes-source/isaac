@@ -5,7 +5,7 @@ const { spawn } = require('child_process');
 const path = require('path');
 const fs = require('fs');
 const [audio, out, flag, times] = process.argv.slice(2);
-const FPS = 30, DUR = 44.72;
+const FPS = 30, DUR = +(process.env.DUR || 44.72);
 (async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1080, height: 1920 } });
