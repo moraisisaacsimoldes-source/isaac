@@ -106,7 +106,7 @@ TikTok (configuração na interface web), mas recomendo revisar cada vídeo ante
   uma vez.
 - **Título e legenda**: escreva um título curto + 3 a 5 hashtags do nicho
   (ex.: `#curiosidades #shorts #reels`).
-- **Direitos autorais**: as imagens do Pexels e a música inclusa são livres
+- **Direitos autorais**: as imagens do Pixabay e a música inclusa são livres
   para uso; evite trocar a música por faixas comerciais.
 
 ## Problemas comuns
